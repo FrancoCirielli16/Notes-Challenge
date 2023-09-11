@@ -1,0 +1,13 @@
+.container{
+    border-radius: 15px;
+    width: 350px;
+    max-width: 450px;
+}
+
+
+.container-info{
+    display: flex;
+    flex-direction: column
+}
+
+

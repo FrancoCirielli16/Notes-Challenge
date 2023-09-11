@@ -1,0 +1,95 @@
+section {
+  padding: 2rem;
+  border-radius: 20px;
+  background-color: hsl(0, 0%, 95%);
+  box-shadow: 6px 9px 1px rgba(0, 0, 0, 0.1);
+}
+h2 {
+  font-size: 1.75rem;
+  text-align: center;
+}
+form {
+  display: flex;
+  flex-direction: column;
+}
+.input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  padding-inline: 0.25rem;
+  padding-top: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid lightgray;
+  --input-font-size: 1rem;
+}
+.input-group label {
+  font-size: 1.25rem;
+}
+.input-group *:not(label) {
+  min-width: 32ch;
+  margin-left: 0.25rem;
+  padding-inline: 0.25rem;
+  padding-block: 0.125rem;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  font-size: var(--input-font-size);
+  font-family: inherit;
+}
+.input-group textarea {
+  resize: none;
+}
+
+.button-group {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 2rem;
+}
+
+.button-group button {
+  padding: 0.25rem;
+  border-radius: 10px;
+  border-width: 1px;
+  font-size: 1.1rem;
+  background-color: transparent;
+}
+
+/* Estilo para la lista de categorías */
+.category-list {
+  padding: 0;
+  margin: 0;
+  list-style-type: none; /* Eliminamos los marcadores de lista */
+}
+
+.category-list li {
+  margin-right: 5px;
+  padding: 5px 10px;
+  border-radius: 3px;
+  background-image: url('data:image/svg+xml,%3Csvg xmlns="http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg" width="24" height="24" viewBox="0 0 24 24"%3E%3Cpath fill="currentColor" d="M5.5 7A1.5 1.5 0 0 1 4 5.5A1.5 1.5 0 0 1 5.5 4A1.5 1.5 0 0 1 7 5.5A1.5 1.5 0 0 1 5.5 7m15.91 4.58l-9-9C12.05 2.22 11.55 2 11 2H4c-1.11 0-2 .89-2 2v7c0 .55.22 1.05.59 1.41l8.99 9c.37.36.87.59 1.42.59c.55 0 1.05-.23 1.41-.59l7-7c.37-.36.59-.86.59-1.41c0-.56-.23-1.06-.59-1.42Z"%2F%3E%3C%2Fsvg%3E'); /* Reemplaza 'ruta-a-tu-imagen-svg.svg' con la ruta correcta a tu imagen SVG */
+  background-size: 16px; /* Ajusta el tamaño de acuerdo a tus necesidades */
+  background-repeat: no-repeat;
+  background-position: left center;
+  padding-left: 24px; /* Espacio para el icono */
+}
+
+/* Estilo para los botones "X" para eliminar categorías */
+.category-list li button {
+  margin-left: 5px;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  padding: 3px 6px;
+}
+
+/* Estilo para el botón "Add" */
+.category-input button {
+  background-color: #0074d9; /* Puedes cambiar el color de fondo */
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  padding: 5px 8px; /* Ancho ajustado */
+  border-radius: 3px;
+}
+
+
